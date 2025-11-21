@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado de Barrio La Alhóndiga - Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo del Mercado de Barrio La Alhóndiga">
+      <span>Mercado de Barrio “La Alhóndiga”</span>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="puestos.html">Puestos</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Contacto</h1>
+      <p>Utiliza este formulario para contactar con el mercado o hacer una consulta.</p>
+    </section>
+
+    <section class="section contact-section">
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="tucorreo@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí tu mensaje"></textarea>
+        </div>
+
+        <div class="form-group form-group-inline">
+          <input id="privacidad" name="privacidad" type="checkbox" required>
+          <label for="privacidad">Acepto el aviso de privacidad</label>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+
+      <div class="contact-info">
+        <h2>Información de contacto</h2>
+        <p>Dirección: Calle Ficticia 123, Barrio La Alhóndiga</p>
+        <p>Teléfono: 600 000 000</p>
+        <p>Email: info@mercado-alhondiga.test</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Mercado de Barrio “La Alhóndiga”. Sitio web de práctica.</p>
+    <p><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
+  </footer>
+</body>
+</html>
