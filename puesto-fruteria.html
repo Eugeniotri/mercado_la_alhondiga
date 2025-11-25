@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
+
+  <!-- CABECERA -->
+  <header class="cabecera">
     <div class="logo">
-      <img src="img/logo.png" alt="Logo del Mercado de Barrio La Alhóndiga">
-      <span>Mercado de Barrio “La Alhóndiga”</span>
+      <p>Mercado de Barrio La Alhóndiga</p>
     </div>
-    <nav class="main-nav">
+    <nav class="menu">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="puestos.html">Puestos</a></li>
@@ -21,18 +22,22 @@
     </nav>
   </header>
 
-  <main>
-    <article class="section puesto-detalle">
-      <h1>Frutería La Plaza</h1>
-      <p>Categoría: Frutería</p>
-      <p>Horario: Lunes a sábado, 8:00–14:00</p>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenido">
 
-      <figure class="puesto-figure">
-        <img src="img/fruteria.jpg" alt="Puesto Frutería La Plaza con fruta fresca">
+    <article class="detalle-puesto">
+
+      <h1>Frutería La Plaza</h1>
+
+      <p><strong>Categoría:</strong> Frutería</p>
+      <p><strong>Horario:</strong> Lunes a sábado, 8:00–14:00</p>
+
+      <figure class="imagen-puesto">
+        <img src="img/fruteria.jpg" alt="Puesto de Frutería La Plaza">
         <figcaption>Fruta y verdura fresca cada día.</figcaption>
       </figure>
 
-      <section>
+      <section class="descripcion-puesto">
         <h2>Descripción</h2>
         <p>
           Frutería de toda la vida con producto fresco de temporada.
@@ -40,7 +45,7 @@
         </p>
       </section>
 
-      <section>
+      <section class="productos-puesto">
         <h2>Productos destacados</h2>
         <ul>
           <li>Manzanas de temporada</li>
@@ -50,13 +55,19 @@
         </ul>
       </section>
 
-      <p><a href="puestos.html" class="card-link">&larr; Volver a la lista de puestos</a></p>
+      <p class="volver">
+        <a href="puestos.html">&larr; Volver a la lista de puestos</a>
+      </p>
+
     </article>
+
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Mercado de Barrio “La Alhóndiga”. Sitio web de práctica.</p>
-    <p><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <p>© 2025 Mercado de Barrio La Alhóndiga</p>
+    <p><a href="#">Aviso legal</a> | <a href="#">Política de privacidad</a></p>
   </footer>
+
 </body>
 </html>

@@ -1,0 +1,213 @@
+/* --------------------------------------------------
+   RESETEO MUY BÁSICO
+   -------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente sencilla y legible */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------------------------------------------
+   CABECERA Y MENÚ
+   -------------------------------------------------- */
+.cabecera {
+    background-color: #333;   /* Gris oscuro */
+    color: white;
+    padding: 15px;
+}
+
+.logo p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 10px;
+    
+
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------
+   CONTENIDO GENERAL
+   -------------------------------------------------- */
+
+.contenido {
+    padding: 20px;
+}
+
+/* --------------------------------------------------
+   BANNER / HERO
+   -------------------------------------------------- */
+.banner {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;   /* Recorta para que quede bonito */
+}
+
+.titulo-principal {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.texto-intro {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* --------------------------------------------------
+   TARJETAS DE PUESTOS
+   -------------------------------------------------- */
+
+.puestos-destacados h2,
+.listado-puestos h2 {
+    margin-bottom: 15px;
+}
+
+/* Contenedor de tarjetas */
+.lista-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* Tarjeta */
+.tarjeta-puesto {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Imagen dentro de tarjeta */
+.tarjeta-puesto img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.tarjeta-puesto h3,
+.tarjeta-puesto h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* --------------------------------------------------
+   FILTROS (solo visual)
+   -------------------------------------------------- */
+
+.filtros {
+    margin: 20px 0;
+}
+
+.botones-filtro button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.botones-filtro button:hover {
+    background-color: #ccc;
+}
+
+/* --------------------------------------------------
+   FORMULARIO DE CONTACTO
+   -------------------------------------------------- */
+
+.formulario-contacto form {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.campo-formulario {
+    margin-bottom: 15px;
+}
+
+.campo-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+/* Botón enviar */
+button[type="submit"],
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button:hover {
+    background-color: #555;
+}
+
+/* --------------------------------------------------
+   PIE DE PÁGINA
+   -------------------------------------------------- */
+
+.pie-pagina {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.pie-pagina a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.pie-pagina a:hover {
+    text-decoration: underline;
+}
