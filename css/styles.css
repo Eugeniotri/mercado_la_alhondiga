@@ -1,5 +1,6 @@
 /* --------------------------------------------------
-   RESETEO MUY BÁSICO
+   RESETEO MUY BÁSICO, todos los elementos sin margin ni padding
+   y box sizing border , no content
    -------------------------------------------------- */
 * {
     margin: 0;
@@ -7,12 +8,13 @@
     box-sizing: border-box;
 }
 
-/* Fuente sencilla y legible */
+/* Fuente sencilla y legible folio en blanco y con un 
+pequeño padding para q se separe de los bordes*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
-    padding: 0;
-    margin: 0;
+    padding:20px;
+    
 }
 
 /* --------------------------------------------------
@@ -23,32 +25,46 @@ body {
     color: white;
     padding: 15px;
 }
+.logo img{
+    display: block;/* ejemplo de pasar a un block y centrarlo*/
+    width: 10%;
+    margin: 0 auto;
+}
 
-.logo p {
+.logo p {  /* este caso es un display inlineblock con align left
+    aunque al ser texto por defecto sale a la izq*/
+    text-align: left;
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .menu ul {
     list-style: none;
     margin-top: 10px;
+    text-align: right; /* es un display block ,
+    alineo a la derecha todo el menu*/
     
 
 }
 
 .menu ul li {
-    display: inline-block;
+    display: inline-block;/* es un display inline por defect
+    y por eso lo paso a display inline block*/
     margin-right: 15px;
 }
 
 .menu ul li a {
+    display: inline-block;/* tb lo paso a inlineblock 
+    para q sea una cajita y no texto inlne por defecto al pulsar*/
+    padding: 10px 15px;
     color: rgb(250, 250, 250);
     text-decoration: none;
     font-weight: bold;
 }
 
-.menu ul li a:hover {
-    text-decoration: underline;
+.menu ul li a:hover {/* le pongo un hover sencillo de subrayar*/
+    text-decoration:underline;
 }
 
 /* --------------------------------------------------
@@ -57,10 +73,11 @@ body {
 
 .contenido {
     padding: 20px;
+    background-color: white;
 }
 
 /* --------------------------------------------------
-   BANNER / HERO
+   BANNER / primera section
    -------------------------------------------------- */
 .banner {
     text-align: center;
@@ -68,18 +85,24 @@ body {
 }
 
 .banner img {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;   /* Recorta para que quede bonito */
+    display: block;
+    width: 90%;
+    height: auto;
+    margin:0 auto;   /*  pongo la imagen en display block le doy tamaño
+    del 90%  y le pongo height auto para q no se deforme
+    margin 0 auto la pongo al centro*/
 }
 
-.titulo-principal {
+.titulo-principal {/* le pongo tamaño por encima de 
+    16px y un margin arriba y abajo*/
     font-size: 28px;
     margin: 15px 0;
+
 }
 
 .texto-intro {
-    margin-top: 10px;
+    margin-top: 10px;/* aqui sobra este margin pq titulo ppal 
+    ya tiene un margin top y bottm de 16 px*/
     font-size: 16px;
 }
 
@@ -87,17 +110,20 @@ body {
    TARJETAS DE PUESTOS
    -------------------------------------------------- */
 
-.puestos-destacados h2,
+.puestos-destacados h2,/*todo h2 de puesto destacado
+y de listado-puesto para puesto.html le pongo margen bajo de 15px*/
+
 .listado-puestos h2 {
     margin-bottom: 15px;
 }
 
-/* Contenedor de tarjetas */
+/* Contenedor de tarjetas lo hago con un div para meterle el display de las
+tarjetas o articles q meto dentro q meto dentro */
 .lista-tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
-}
+}/*así hacemos un diseño responsive q se adapta a dispositivo*/
 
 /* Tarjeta */
 .tarjeta-puesto {
@@ -111,7 +137,8 @@ body {
 /* Imagen dentro de tarjeta */
 .tarjeta-puesto img {
     width: 100%;
-    height: 140px;
+    height: 140px;/* tb lo podria poner
+     con height auto y quitar el object fit cover en estas imagenes*/
     object-fit: cover;
     margin-bottom: 10px;
 }
